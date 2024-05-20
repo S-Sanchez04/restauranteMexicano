@@ -48,7 +48,12 @@ public class PedidoController {
     
     @GetMapping("/ConsultarPedido/{id}")
     public Pedido ConsultarPedido(@PathVariable("id") Integer id){
-        return servicioPedidoImpl.ConsultarPedido(id);
+        try{
+            return servicioPedidoImpl.ConsultarPedido(id);
+        }
+        catch(NullPointerException e){
+            return null;
+        }
     }
 
 }
