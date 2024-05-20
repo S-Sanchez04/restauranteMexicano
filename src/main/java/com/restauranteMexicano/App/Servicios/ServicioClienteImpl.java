@@ -20,6 +20,9 @@ public class ServicioClienteImpl implements ServicioCliente {
 
     @Override
     public Cliente consultarCliente(Integer clienteID) {
-        return clienteMapper.ConsultarCliente(clienteID);
+        if(clienteID != null)
+            return clienteMapper.ConsultarCliente(clienteID);
+        else
+            return null;
     }
 }

@@ -3,6 +3,7 @@ package com.restauranteMexicano.App.Controladores;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,6 +27,7 @@ import com.restauranteMexicano.App.model.Pedido;
 
 @RestController
 @RequestMapping("/Pedido")
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 public class PedidoController {
  
 
@@ -46,7 +48,12 @@ public class PedidoController {
     
     @GetMapping("/ConsultarPedido/{id}")
     public Pedido ConsultarPedido(@PathVariable("id") Integer id){
-        return servicioPedidoImpl.ConsultarPedido(id);
+        try{
+            return servicioPedidoImpl.ConsultarPedido(id);
+        }
+        catch(NullPointerException e){
+            return null;
+        }
     }
 
 }
