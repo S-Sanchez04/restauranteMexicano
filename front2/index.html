@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Mexicano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Restaurante Mexicano</h1>
+
+    <h2>Cédula</h2>
+    <input type="text" id="inputCedula" placeholder="Ingrese la cédula">
+
+    <div class="buttons">
+        <button id="clienteBtn">Cliente</button>
+        <button id="productoBtn">Producto</button>
+        <button id="pedidoBtn">Pedido</button>
+    </div>
+
+    <div id="content">
+        <!-- El contenido dinámico se insertará aquí -->
+    </div>
+
+       <!-- Tabla de clientes -->
+  <div id="tablaClientes" style="display: none;">
+    <h2>Información de Clientes</h2>
+    <table class="tabla" id="tabla-clientes">
+        <thead class="cabecera border-top-right">
+          <tr>
+            <th class="border-top-left">ID</th>
+            <th>Nombre</th>
+            <th>Licencia</th>
+            <th>Direccion</th>
+          </tr>
+        </thead>
+        <tbody id="datos-clientes">
+          <!-- Aquí se llenarán las filas de la tabla con los datos de los clientes -->
+        </tbody>
+    </table>
+  </div>
+
+  <!-- Tabla de productos -->
+  <div id="tablaProductos" style="display: none;">
+    <h2>Información de Productos</h2>
+    <table class="tabla" id="tabla-productos">
+        <thead class="cabecera border-top-right">
+          <tr>
+            <th class="border-top-left">ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Ingredientes</th>
+            <th>Descripcion</th>
+            <th>Dcto</th>
+          </tr>
+        </thead>
+        <tbody id="datos-clientes">
+          <!-- Aquí se llenarán las filas de la tabla con los datos de los clientes -->
+        </tbody>
+    </table>
+  </div>
+
+  <!-- Tabla de pedidos -->
+  <div id="tablaPedidos" style="display: none;">
+    <h2>Información de Pedidos</h2>
+    <table class="tabla" id="tabla-pedidos">
+      <!-- Estructura de la tabla de pedidos -->
+    </table>
+  </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
