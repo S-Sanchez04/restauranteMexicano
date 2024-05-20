@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #A2CF9C;
+}
+
+.container {
+  text-align: center;
+}
+
+.cuadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid#406B3A;
+  padding: 20px;
+  background-color: #A2CF9C;
+}
+
+.columna {
+  flex: 1;
+  padding: 0 10px;
+}
+
+#estados div {
+  margin-bottom: 10px;
+}
+
+.sushi {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.entregado {
+  background-color: green;
+}
+
+.proceso {
+  background-color: yellow;
+}
