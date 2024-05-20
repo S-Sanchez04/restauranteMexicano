@@ -1,70 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  .buttons {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .buttons button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  #content {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  #clienteResult, #productoResult, #pedidoResult {
-    margin-top: 20px;
-    white-space: pre-wrap;
-    font-family: monospace;
-    background: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  /* Estilos para las tablas */
-  .tabla {
-    border-collapse: collapse;
-    width: 80%; /* Ancho de la tabla */
-    margin: 0 auto; /* Centrar la tabla horizontalmente */
-  }
-  
-  /* Estilos para los titulares de las columnas */
-th {
-    background-color: #f2f2f2; /* Color de fondo */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    text-align: center; /* Alinear el texto al centro */
-    border: 1px solid #ddd; /* Borde */
-    word-wrap: break-word; /* Ajustar texto dentro de las celdas */
-    width: auto;
-  }  
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Color de fondo */
+}
 
-  tr{
-    vertical-align: middle;
-    width: inherit; /* Ancho de la tabla */
-    margin: 0 auto; /* Centrar la tabla horizontalmente */
-  }
+h1, h2 {
+  text-align: center;
+  color: #333; /* Color del texto */
+}
+
+.buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttons button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+#content {
+  margin: 20px auto; /* Centrar horizontalmente */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* Color de fondo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#clienteResult, #productoResult, #pedidoResult {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  font-family: monospace;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.tabla {
+  border-collapse: collapse;
+  width: 80%; /* Ancho de la tabla */
+  margin: 20px auto; /* Centrar horizontalmente */
+}
+
+th {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
 
 td {
-    border: 1px solid #ddd; /* Borde */
-    text-align: center; /* Alinear el texto al centro */
-    padding: 4px; /* Espaciado interior */
-    word-wrap: break-word; /* Ajustar texto dentro de las celdas */
-    max-width: 300px;
-    width: inherit
-  }
-  .fila {
-    vertical-align: middle; /* Alinear verticalmente al centro */
-    text-align: center; /* Alinear horizontalmente al centro */
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+.fila {
+  vertical-align: middle;
+  text-align: center;
 }
