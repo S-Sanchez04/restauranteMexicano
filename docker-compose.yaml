@@ -9,3 +9,9 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://34.71.69.213:3306/Restaurante_Mexicano
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: restaurante-mexicano
+#Diseño y arquitectura de software
+#@author
+#    Santiago Sánchez Cárdenas - 0000271976
+#    Sergio Gabriel Nieto Meneses - 0000246107
+#    Mauricio Andres Valderrama Acosta - 0000251802
+

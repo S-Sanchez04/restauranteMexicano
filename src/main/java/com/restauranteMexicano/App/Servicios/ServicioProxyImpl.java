@@ -7,7 +7,14 @@ import org.springframework.stereotype.Service;
 
 import com.restauranteMexicano.App.model.Cliente;
 import com.restauranteMexicano.App.model.Producto;
+/**
+    Diseño y arquitectura de software
+    @author
+        Santiago Sánchez Cárdenas - 0000271976
+        Sergio Gabriel Nieto Meneses - 0000246107
+        Mauricio Andres Valderrama Acosta - 0000251802
 
+ */
 @Service
 public class ServicioProxyImpl implements ServicioProducto {
 
